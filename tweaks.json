@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Enable Cloudflare DNS",
+    "description": "Sets DNS to 1.1.1.1 for fast browsing.",
+    "command": "netsh interface ip set dns name=\"Ethernet\" static 1.1.1.1"
+  },
+  {
+    "name": "Optimize RAM",
+    "description": "Clears working sets of all processes.",
+    "type": "memory"
+  },
+  {
+    "name": "Disable Telemetry",
+    "description": "Turns off Windows telemetry.",
+    "command": "sc stop DiagTrack & sc config DiagTrack start= disabled"
+  }
+]
